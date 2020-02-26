@@ -1,27 +1,27 @@
 {
-  "name": "laravel-vue-i18n-generator-webpack",
+  "name": "laravel-ziggy-generator-webpack",
   "version": "0.1.0",
-  "description": "Webpack plugin that generate localization file for vue-i18n from laravel localizatitons",
+  "description": "Webpack plugin that generates ziggy file for laravel routes",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cappuc/laravel-vue-i18n-generator-webpack.git"
+    "url": "git+https://github.com/marc-pages-onclick/laravel-ziggy-generator-webpack.git"
   },
   "keywords": [
     "laravel",
     "webpack",
     "vue",
-    "i18n"
+    "ziggy"
   ],
   "author": "Fabio Capucci",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cappuc/laravel-vue-i18n-generator-webpack/issues"
+    "url": "https://github.com/marc-pages-onclick/laravel-ziggy-generator-webpack/issues"
   },
-  "homepage": "https://github.com/cappuc/laravel-vue-i18n-generator-webpack#readme",
+  "homepage": "https://github.com/marc-pages-onclick/laravel-ziggy-generator-webpack#readme",
   "dependencies": {
     "chokidar": "^1.7.0"
   }

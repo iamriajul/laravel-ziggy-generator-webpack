@@ -1,7 +1,7 @@
 const exec = require('child_process').exec
 const chokidar = require('chokidar')
 
-class LaravelVueI18nGenerator {
+class LaravelZiggyGenerator {
     constructor() {
         this.isWatchingForChanges = false
         this.firstCompile = true
@@ -22,13 +22,13 @@ class LaravelVueI18nGenerator {
     }
 
     generate() {
-        exec('php artisan vue-i18n:generate')
+        exec('php artisan ziggy:generate "resources/js/ziggy.js"')
     }
 
     watchFiles() {
         if (this.isWatchingForChanges) return
 
-        chokidar.watch('resources/lang/**/*', {
+        chokidar.watch('routes/**/*', {
             persistent: true
         }).on('change', this.generate)
 
@@ -40,4 +40,4 @@ class LaravelVueI18nGenerator {
     }
 }
 
-module.exports = LaravelVueI18nGenerator
+module.exports = LaravelZiggyGenerator

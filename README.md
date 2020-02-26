@@ -1,36 +1,32 @@
-# Laravel Vue-i18n Generator Webpack
-This webpack plugin allow you to keep updated your vue-i18n localizations with laravel localizations.
-This is a wrapper for webpack around [Martin Lindhe](https://github.com/martinlindhe)'s [laravel-vue-i18n-generator](https://github.com/martinlindhe/laravel-vue-i18n-generator).
+# Laravel Ziggy Generator Webpack
+This webpack plugin allow you to keep updated your laravel ziggy routes.
+This is a wrapper for webpack around [Tighten](https://github.com/tightenco)'s [ziggy](https://github.com/tightenco/ziggy).
 
 ## Requirements
-- [laravel-vue-i18n-generator](https://github.com/martinlindhe/laravel-vue-i18n-generator)
+- [ziggy](https://github.com/tightenco/ziggy)
 
 ## Usage
-Install laravel-vue-i18n-generator (see his [repo](https://github.com/martinlindhe/laravel-vue-i18n-generator) for more info)
+Install ziggy (see his [repo](https://github.com/tightenco/ziggy) for more info)
 ```bash
-composer require martinlindhe/laravel-vue-i18n-generator
-```
-In config/app.php add to providers
-```php
-MarinLindhe\VueInternationalizationGenerator\GeneratorProvider::class,
+composer require tightenco/ziggy
 ```
 
-Install laravel-vue-i18n-generator-webpack
+Install laravel-ziggy-generator-webpack
 ```bash
 //npm
-npm install laravel-vue-i18n-generator-webpack --save
+npm install laravel-ziggy-generator-webpack --save
 
 //yarn
-yarn add laravel-vue-i18n-generator-webpack
+yarn add laravel-ziggy-generator-webpack
 ```
 
 Add to your webpack config
 ```javascript
-const LaravelVueI18nGenerator = require('laravel-vue-i18n-generator-webpack')
+const LaravelZiggyGenerator = require('laravel-ziggy-generator-webpack')
 
 ...
 plugins: [
-   new LaravelVueI18nGenerator 
+   new LaravelZiggyGenerator 
 ]
 ...
 ```
