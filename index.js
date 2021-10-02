@@ -28,7 +28,7 @@ class LaravelZiggyGenerator {
     watchFiles() {
         if (this.isWatchingForChanges) return
 
-        chokidar.watch('routes/**/*', {
+        chokidar.watch(['routes/**/*', 'Modules/**/Routes/**/*'], {
             persistent: true
         }).on('change', this.generate)
 
